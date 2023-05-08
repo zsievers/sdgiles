@@ -1,8 +1,4 @@
-/*
-=============== 
-Variables
-===============
-*/
+
 
 :root {
     /* dark shades of primary color*/
@@ -19,12 +15,12 @@ Variables
     --clr-primary-9: hsl(205, 90%, 88%);
     --clr-primary-10: hsl(205, 100%, 96%);
     /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-1: #102a42;
     --clr-grey-2: hsl(211, 39%, 23%);
-    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-3: #324d67
     --clr-grey-4: hsl(209, 28%, 39%);
     /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-5: #617d98;
     --clr-grey-6: hsl(209, 23%, 60%);
     --clr-grey-7: hsl(211, 27%, 70%);
     --clr-grey-8: hsl(210, 31%, 80%);
@@ -161,12 +157,12 @@ nav {
     box-shadow: var(--light-shadow);
 }
 
-.nav-header {
+/* .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-}
+} */
 
 .nav-toggle {
     font-size: 1.5rem;
@@ -187,20 +183,21 @@ nav {
 }
 
 .links a {
-    color: var(--clr-grey-3);
-    font-size: 1rem;
-    text-transform: capitalize;
+    /* color: var(--clr-grey-3); */
+    /* font-size: 1rem; */
+    /* text-transform: capitalize; */
     letter-spacing: var(--spacing);
     display: block;
-    padding: 0.5rem 1rem;
-    transition: var(--transition);
+    /* padding: 0.5rem 1rem; */
+    /* transition: var(--transition); */
+    /* all 0.3s linear */
 }
 
-.links a:hover {
+/* .links a:hover {
     background: var(--clr-grey-8);
     color: var(--clr-grey-1);
     padding-left: 1.5rem;
-}
+} */
 
 .links-container {
     height: 0;

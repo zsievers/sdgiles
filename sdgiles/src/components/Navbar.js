@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { links } from "../lib/data";
 import { FaBars } from "react-icons/fa";
+import { Navbar } from "@material-tailwind/react";
 import "./nb.css";
 
 const Nav = () => {
@@ -19,28 +20,31 @@ const Nav = () => {
     }
   }, [showLinks]);
   return (
-    <nav>
-      <div className="nav-center">
-        <div className="nav-header">
-          <img src="" className="logo" alt="logo" />
-          <button className="nav-toggle" onClick={toggleLinks}>
-            <FaBars />
-          </button>
-        </div>
-        <div className="links-container" ref={linksContainerRef}>
-          <ul className="links" ref={linksRef}>
-            {links.map((link) => {
-              const { id, url, text } = link;
-              return (
-                <li key={id}>
-                  <a href={url}>{text}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+    <Navbar className="flex flex-row justify-between p-4 sticky top-0 z-50">
+      <div>
+        <button
+          className="text-[#617d98] text-2xl bg-transparent cursor-pointer border-transparent ease-in-out duration-300 hover:text-[#102a42] md:hidden"
+          onClick={toggleLinks}
+        >
+          <FaBars />
+        </button>
       </div>
-    </nav>
+      <div className="links-container" ref={linksContainerRef}>
+        <ul
+          className="links text-lg block p-3 text-[#324d67] capitalize"
+          ref={linksRef}
+        >
+          {links.map((link) => {
+            const { id, url, text } = link;
+            return (
+              <li key={id}>
+                <a href={url}>{text}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </Navbar>
   );
 };
 

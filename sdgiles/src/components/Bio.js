@@ -1,6 +1,5 @@
-import React from "react";
 import headshot from "../images/headerImg/sg-logo.png";
-import { paragraph } from "../lib/data";
+import serviceText from "../lib/textData";
 
 export default function Bio() {
   return (
@@ -16,7 +15,7 @@ export default function Bio() {
         />
       </div>
       <div className="text-gray-600 rounded overflow-hidden px-3 py-2">
-        {paragraph.map((text) => {
+        {serviceText.map((text) => {
           return <p className="text-md md:text-base lg:text-xl">{text}</p>;
         })}
       </div>

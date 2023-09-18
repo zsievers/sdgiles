@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { links } from "../lib/data";
+import links from "../lib/linksData";
 import { FaBars } from "react-icons/fa";
 import { Navbar } from "@material-tailwind/react";
 import "./nb.css";

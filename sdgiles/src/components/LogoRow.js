@@ -1,5 +1,5 @@
 import React from "react";
-import { logos } from "../lib/data";
+import logos from "../lib/logoData";
 
 export default function LogoRow() {
   return (
